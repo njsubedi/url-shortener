@@ -64,6 +64,8 @@ Here's how to use the code:
   Modify the values there to change how the site is presented to the users!
   
   
+  After successful completion request the "addurl.php" from you browser.
+  
   Regards,
   Nj Subedi
         
