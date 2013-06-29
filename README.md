@@ -2,6 +2,8 @@ url-shortener
 =============
 
 Simple URL Shortening using PHP and XML with Re-captcha verification.
+Online Demo:
+      http://njs.com.np/addurl.php
 
 
 This is a simple implementation of URL Shortener service in PHP without using databases. It is a weekend project, so doesn't have many features but it surely can help you understand the algorithms of url shortening.
