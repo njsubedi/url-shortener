@@ -1,8 +1,7 @@
 <?php
 /*
-  This file comes with Nj Subedi's GASC license. Make sure you are abiding by the licence rules!
+	This file comes with Nj Subedi's GASC license. Make sure you are abiding by the licence rules!
 	Licence URL: http://njs.com.np/license.html
-	Github REPO: http://www.github.com/njsubedi/url-shortener
 	
 	Project: Simple URL Shortener - PHP and XML
 	File: addurl.php
@@ -30,8 +29,7 @@ if( isset( $_POST['add']) ){
 		$u = ( isset($_POST['url']) && trim($_POST['url']) ) ? $_POST['url'] : NULL;
     
 		if( $u )
-		{
-				
+		{				
 			if( substr($u, 0, 7) == 'http://' || substr($u, 0, 8) == 'https://' || substr($u, 0, 6) == 'ftp://' )
 			{
 				//TODO something useful;
@@ -44,7 +42,7 @@ if( isset( $_POST['add']) ){
 			}else{
 				$t = 'u'.substr(md5($u . time()), 5, 7);
 			}           
-					
+			
 			$xml = simplexml_load_file( DATA_FILE );
 			if ( !$xml ){
 				die( $config['error']['data_load']);
@@ -82,15 +80,7 @@ if( isset( $_POST['add']) ){
 	}
 }
 
-?>
-
-
-
-
-
-
-
-<!DOCTYPE html>
+?><!DOCTYPE html>
 <head><title><?php echo $config['page']['title']; ?></title>
 
 <style type="text/css">
