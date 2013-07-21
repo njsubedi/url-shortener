@@ -9,6 +9,15 @@
 
 define('URL_SHORTENER', ' ');
 
+
+$lang = 'en';
+if( isset( $_GET['lang'] ) && $_GET['lang'] == 'ne' )
+{
+	$lang = 'ne';
+	$config = $config_ne;
+}
+
+
 require_once('url_shortener_setting.php');
 
 if( isset( $_POST['add']) ){
@@ -129,7 +138,7 @@ if( isset( $_POST['add']) ){
 		}
 		?>
 		
-        <form action="addurl.php" method="post">
+        <form action="addurl.php?lang=<?php $lang; ?>" method="post">
             <p>
                 <b><?php 
 					echo $config['form']['tag']['label'];
