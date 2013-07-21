@@ -138,7 +138,7 @@ if( isset( $_POST['add']) ){
 		}
 		?>
 		
-        <form action="addurl.php?lang=<?php $lang; ?>" method="post">
+        <form action="addurl.php?lang=<?php echo $lang; ?>" method="post">
             <p>
                 <b><?php 
 					echo $config['form']['tag']['label'];
