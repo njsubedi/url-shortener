@@ -4,7 +4,7 @@
 	Licence URL: http://njs.com.np/license.html
 	Github REPO: http://www.github.com/njsubedi/url-shortener
 
-	Project: Simple URL Shortener - PHP and XML
+	Project: Simple वेव ठेगाना छोट्याउने सेवा - PHP and XML
 	File: url_shortener_settings.php
 
 */
@@ -33,8 +33,8 @@ define('RECAPTCHA_PUBLIC', '6Lf4fuMSAAAAAFt7Nqr54bgB7fsI_UDnIVULjus8');
 $config =
 	array (
 		'page' => array(
-			'title' => 'PHP URL Shortener - Nj Subedi',
-			'heading' => 'URL Shortener',
+			'title' => 'PHP वेव ठेगाना छोट्याउने सेवा - Nj Subedi',
+			'heading' => 'वेव ठेगाना छोट्याउने सेवा',
 			
 			'instruction' => 'Add a tag and URL. Visit <em><b>'. SITE_BASE . TAG_PREPEND .'tag</b></em> to go to the URL.',
 			
@@ -46,7 +46,7 @@ $config =
 			), 
 			
 			'footer' =>
-			'Source Code: <a href="http://www.github.com/njsubedi/url-shortener/" title="Nj Subedi: URL Shorterer- Github"><img src="a/GitHub_Logo_small.png" alt="URL Shortener by Nj Subedi- GitHub" /></a>. Please report bugs and issues.'
+			'Source Code: <a href="http://www.github.com/njsubedi/url-shortener/" title="Nj Subedi: URL Shorterer- Github"><img src="a/GitHub_Logo_small.png" alt="वेव ठेगाना छोट्याउने सेवा by Nj Subedi- GitHub" /></a>. Please report bugs and issues.'
 		),
 		
 		'message' => array(
@@ -85,6 +85,67 @@ $config =
 				array(
 					'pre' => '<small>The tag ',
 					'post' => '</small> does not point to any valid link. You want to add it.'
+				)
+		)
+	)
+;
+
+
+$config_ne =
+	array (
+		'page' => array(
+			'title' => 'PHP वेव ठेगाना छोट्याउने सेवा - एन् जे सुबेदी',
+			'heading' => 'वेव ठेगाना छोट्याउने सेवा',
+			
+			'instruction' => 'ट्याग हाल्नुहोस् र <em><b>'. SITE_BASE . TAG_PREPEND .'tag</b></em> मा जानुहोस् ।',
+			
+			'footnote' => array(
+				'topic' => 'गोपनीयता नीति',
+				
+				'text' => 
+				'कृपया सावधान हुनुहोला । यस फर्मबाट पठाइएका हरेक वेव ठेगानाहरू मैले हेर्न मिल्ने गरि राखिने छन् । साथै, ती सबैमा मेरो पूर्ण अधिकार हुनेछ ।',
+			), 
+			
+			'footer' =>
+			'यस सेवाको सम्पुर्ण स्रोत कोड (HTML, PHP तथा XML) <a href="http://www.github.com/njsubedi/url-shortener/" title="PHP वेव ठेगाना छोट्याउने सेवा - एन् जे सुबेदी - गीटहब"><img src="a/GitHub_Logo_small.png" alt="एन् जे सुबेदीले बनाउनु भएको वेव ठेगाना छोट्याउने सेवा" /></a> मा उपलब्ध छ । कृपया सुझाव तथा समस्याहरू औँल्यानुहोला । '
+		),
+		
+		'message' => array(
+			'success' =>
+				array(
+					'pre' => 'बधाई छ, तपाईँ अब ',
+					'post' => ' मा जान वा यस ठेगानालाई सेयर गर्न सक्नुहुनेछ ।',
+				)
+		),
+		
+		'form' => array(
+			'url' => 'लामो ठेगाना',
+			
+			'tag' => array(
+				'label' => 'ट्याग',
+				'intro' => 'बैकल्पिक (कृपया सम्झन सकिने गरि छोटो राख्नुहोस्) ',
+			),
+			
+			'submit' => 'छोट्याउनुहोस्',
+		),
+		
+		'error' => array(
+			'data_load' => 'मेरो केही गल्तिले गर्दा जरुरी फाईल लोड गर्न सकिएन । कृपया पु:न प्रयास गर्नुहोस् । :(',
+			
+			'taken' =>
+				array(
+					'pre' => 'माफ गर्नुहोला, ',
+					'post' => ' ट्याग पहिल्यै प्रयोग भै\'सकेको छ ! एक पटक हेर्नुहोस् !'
+				),
+			
+			'recaptcha' => 'स्क्रिनमा देखाईएको कोड र तपाईँले अघि हाल्नुभएको कोड मिलेन । कृपया पु:न प्रयास गर्नुहोस् ।',
+			
+			'no_url' => 'कतै तपाईँले वेव ठेगाना दिन त बिर्सिनुभएन ?',
+			
+			'not_found' =>
+				array(
+					'pre' => '<small>तपाईले खोज्नुभएको ट्याग ',
+					'post' => '</small> उपलब्ध छैन । तपाईँ आँफै यो ट्याग हालेर वेव ठेगाना छोट्याउन सक्नुहुनेछ ।'
 				)
 		)
 	)
