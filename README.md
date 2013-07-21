@@ -1,5 +1,8 @@
 url-shortener
 =============
+Licensed under the GASC License (http://njs.com.np/license.html) by Nj Subedi.
+The license applies to all the files under this repository.
+
 
 Simple URL Shortening using PHP and XML with Re-captcha verification.
 Online Demo:
